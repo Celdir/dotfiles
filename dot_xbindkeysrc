@@ -1,0 +1,26 @@
+"firefox"
+    mod4 + w
+
+"steam"
+    mod4 + shift + s
+
+"pactl set-sink-mute 0 toggle"
+    mod4 + shift + m
+
+"pactl set-sink-volume 0 +5%"
+    mod4 + equal
+
+"pactl set-sink-volume 0 -5%"
+    mod4 + minus
+
+"systemctl suspend"
+    mod4 + shift + l
+
+"dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
+    mod4 + shift + p
+
+"dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
+    mod4 + shift + left
+
+"dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
+    mod4 + shift + right

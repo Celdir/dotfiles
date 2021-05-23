@@ -1,0 +1,4 @@
+FG='#FFFFFF'
+BG='#051121'
+FONT='-*-terminus-medium-r-*-*-12-*-*-*-*-*-*-*'
+conky | dzen2 -x '0' -y '1080' -e '' -w '2560' -ta c -fg $FG -bg $BG -fn $FONT -p & 

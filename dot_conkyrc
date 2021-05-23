@@ -1,0 +1,14 @@
+conky.config = {
+	out_to_console = true,
+	background = false,
+	out_to_x = false,
+	cpu_avg_samples = 2,
+	update_interval = 1,
+	total_run_times = 0,
+	use_spacer = 'none',
+
+};
+
+conky.text = [[
+^fg(\#8ED5E1)Uptime: ^fg()$uptime ^fg(\#8ED5E1) | CPU: ^fg()${cpu}% ^fg(\#8ED5E1)|  /home: ^fg()${fs_used /home}/${fs_size /home}^fg(\#8ED5E1) |  RAM: ^fg()$mem ^fg(\#8ED5E1) | Weather: ^fg()${execi 300 sh ~/.config/scripts/weather.sh 98105}^fg(\#8ED5E1) | Volume: ^fg()${exec amixer -D pulse | egrep -o "[0-9]+%" | head -1 | egrep -o "[0-9]*"}% ^fg(\#8ED5E1) | Battery: ^fg()${cat /sys/class/power_supply/cw2015-battery/capacity}%  
+]];

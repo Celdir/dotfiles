@@ -1,0 +1,13 @@
+#!/bin/sh
+
+[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+sh ~/.fehbg &
+while true; do
+	xsetroot -name "$( date +"%A %d %B %T" )"
+	sleep 1s	#Updates date and time every second
+done &
+(sleep 3s; sh ~/.config/scripts/dzconky) &
+xbindkeys & 
+setxkbmap -option compose:sclk &
+exec dwm
+
