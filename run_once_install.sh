@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install packages
-sudo pacman -S --no-confirm --needed neovim rxvt-unicode make gcc feh xbindkeys dzen2 conky
+sudo pacman -S --no-confirm --needed neovim make gcc feh xbindkeys dzen2 conky
 
 # neovim setup
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
@@ -13,3 +13,7 @@ nvim --headless +PlugInstall +qall
 # install dwm
 cd ~/.config/dwm
 sudo make; sudo make install
+
+# install st
+cd ~/.config/st
+sudo make clean install
