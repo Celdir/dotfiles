@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup {
-    ensure_installed = { "rust_analyzer", "clangd", "elixirls", "pyright" },
+    ensure_installed = { "rust_analyzer", "clangd", "elixirls", "pyright", "gopls" },
 }
 
 local lsp_zero = require('lsp-zero')
@@ -14,6 +14,7 @@ require("lspconfig").rust_analyzer.setup {}
 require("lspconfig").clangd.setup {}
 require("lspconfig").elixirls.setup {}
 require("lspconfig").pyright.setup {}
+require("lspconfig").gopls.setup {}
 
 local cmp = require('cmp')
 
