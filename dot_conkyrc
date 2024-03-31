@@ -10,5 +10,5 @@ conky.config = {
 };
 
 conky.text = [[
-^fg(\#8ED5E1)Uptime: ^fg()$uptime ^fg(\#8ED5E1) | CPU: ^fg()${cpu}% ^fg(\#8ED5E1)|  /home: ^fg()${fs_used /home}/${fs_size /home}^fg(\#8ED5E1) |  RAM: ^fg()$mem ^fg(\#8ED5E1) | Weather: ^fg()${execi 300 sh ~/.config/scripts/weather.sh 98105}^fg(\#8ED5E1) | Volume: ^fg()${exec amixer -D pulse | egrep -o "[0-9]+%" | head -1 | egrep -o "[0-9]*"}% ^fg(\#8ED5E1) | Battery: ^fg()${cat /sys/class/power_supply/cw2015-battery/capacity}%  
+^bg(\#5f5f87) Uptime ^bg() $uptime ^bg(\#5f5f87) CPU ^bg() ${cpu}% ^bg(\#5f5f87) /home ^bg() ${fs_used /home}/${fs_size /home} ^bg(\#5f5f87) RAM ^bg() $mem ^bg(\#5f5f87) Weather ^bg() ${execi 300 sh ~/scripts/weather.sh 98103} ^bg(\#5f5f87) Volume ^bg() ${exec amixer -D pulse | egrep -o "[0-9]+%" | head -1 | egrep -o "[0-9]*"}%  
 ]];
