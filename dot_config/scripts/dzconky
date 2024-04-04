@@ -1,4 +1,4 @@
 FG='#FFFFFF'
 BG='#262626'
-FONT='LiberationMono-Regular:size=10'
+FONT='LiterationMonoNerdFont:size=10'
 conky | dzen2 -x '1500' -y '0' -e '' -w '1060' -h '21' -ta r -fg $FG -bg $BG -fn $FONT -p & 

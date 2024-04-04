@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install packages
-sudo pacman -S --no-confirm --needed neovim make gcc feh xbindkeys dzen2 conky
+sudo pacman -S --no-confirm --needed neovim make gcc feh xbindkeys dzen2 conky ttf-liberation-mono-nerd
 
 # neovim setup
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \

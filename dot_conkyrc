@@ -9,10 +9,10 @@ conky.config = {
 };
 
 conky.text = 
-[[^bg(\#af5f5f) ]] .. [[^fn(Symbola)↑🕓^fn()]] ..                   [[ $uptime]] ..                                                                     [[ ^bg()]] ..
-[[^bg(\#87875f) ]] .. [[^fn(Symbola)⚙^fn()]] ..                     [[ ${cpu}%]] ..                                                                     [[ ^bg()]] ..
-[[^bg(\#5f875f) ]] .. [[^fn(Symbola)💽^fn()]] ..                    [[ /home ${fs_used /home}/${fs_size /home}]] ..                                     [[ ^bg()]] ..
-[[^bg(\#5f8787) ]] .. [[^fn(NotoSansCuneiform-Regular)𒁈^fn()]] ..   [[ $mem]] ..                                                                        [[ ^bg()]] ..
-[[^bg(\#5f87af) ]] .. [[^fn(NotoSansSymbols2-Regular)☀^fn()]] ..    [[ ${execi 300 sh ~/scripts/weather.sh 98103}]] ..                                  [[ ^bg()]] ..
-[[^bg(\#5f5f87) ]] .. [[^fn(NotoSansSymbols2-Regular)🔉^fn()]] ..   [[ ${exec amixer -D pulse | egrep -o "[0-9]+%" | head -1 | egrep -o "[0-9]*"}%]] .. [[ ^bg()]] ..
-[[^bg(\#6c6c6c) ]] .. [[^fn(Symbola)📅^fn()]] ..   [[ ${time %A %d %B %H:%M:%S} ]] .. [[ ^bg()]];
+[[^bg(\#af5f5f) ]] .. [[ ]] .. [[ $uptime]] ..                                                                     [[ ^bg()]] ..
+[[^bg(\#87875f) ]] .. [[ ]] .. [[ ${cpu}%]] ..                                                                     [[ ^bg()]] ..
+[[^bg(\#5f875f) ]] .. [[󰋊]] ..  [[ /home ${fs_used /home}/${fs_size /home}]] ..                                     [[ ^bg()]] ..
+[[^bg(\#5f8787) ]] .. [[ ]] .. [[ $mem]] ..                                                                        [[ ^bg()]] ..
+[[^bg(\#5f87af) ]] .. [[󰖐 ]] .. [[ ${execi 300 sh ~/scripts/weather.sh 98103}]] ..                                  [[ ^bg()]] ..
+[[^bg(\#5f5f87) ]] .. [[󰕾]] ..  [[ ${exec amixer -D pulse | egrep -o "[0-9]+%" | head -1 | egrep -o "[0-9]*"}%]] .. [[ ^bg()]] ..
+[[^bg(\#6c6c6c) ]] .. [[ ]] .. [[ ${time %A %d %B %H:%M:%S} ]] ..                                                  [[ ^bg()]];
