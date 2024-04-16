@@ -1,0 +1,18 @@
+conky.config = {
+	out_to_console = true,
+	background = false,
+	out_to_x = false,
+	cpu_avg_samples = 2,
+	update_interval = 0.1,
+	total_run_times = 0,
+	use_spacer = 'none',
+};
+
+conky.text = 
+[[[ ]] ..[[ $uptime]] ..                                                                         "][" ..
+[[ ]] .. [[ ${cpu}%]] ..                                                                         "][" ..
+[[󰋊]] ..  [[ /home ${fs_used /home}/${fs_size /home}]] ..                                         "][" ..
+[[ ]] .. [[ $mem]] ..                                                                            "][" ..
+[[󰖐 ]] .. [[ ${execi 300 sh ~/scripts/weather.sh 98103}]] ..                                      "][" ..
+[[󰕾]] ..  [[ ${exec amixer -D pulse | grep -E -o '[0-9]+%' | head -1 | grep -E -o '[0-9]*'}%]] .. "][" ..
+[[ ]] .. [[ ${time %A %d %B %H:%M:%S}]] ..                                                       "]";

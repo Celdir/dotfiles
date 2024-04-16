@@ -1,0 +1,44 @@
+0000000000000000000000000000000000000000 dd00d994ce4c53829d0b871622dc05e90a6f58c3 Celdir <michael.earl7769@gmail.com> 1712119118 -0700	clone: from https://codeberg.org/dwl/dwl.git
+dd00d994ce4c53829d0b871622dc05e90a6f58c3 dd00d994ce4c53829d0b871622dc05e90a6f58c3 Celdir <michael.earl7769@gmail.com> 1712120244 -0700	reset: moving to HEAD
+dd00d994ce4c53829d0b871622dc05e90a6f58c3 dd00d994ce4c53829d0b871622dc05e90a6f58c3 Celdir <michael.earl7769@gmail.com> 1712120266 -0700	reset: moving to HEAD
+dd00d994ce4c53829d0b871622dc05e90a6f58c3 49f3255052f9e20150260fbbc57def2be83a034b Celdir <michael.earl7769@gmail.com> 1712120369 -0700	am: introduce gaps with functionality of useless gaps from dwm
+49f3255052f9e20150260fbbc57def2be83a034b dd00d994ce4c53829d0b871622dc05e90a6f58c3 Celdir <michael.earl7769@gmail.com> 1712120376 -0700	am --abort
+dd00d994ce4c53829d0b871622dc05e90a6f58c3 dd00d994ce4c53829d0b871622dc05e90a6f58c3 Celdir <michael.earl7769@gmail.com> 1712120528 -0700	reset: moving to HEAD
+dd00d994ce4c53829d0b871622dc05e90a6f58c3 dd00d994ce4c53829d0b871622dc05e90a6f58c3 Celdir <michael.earl7769@gmail.com> 1712120562 -0700	checkout: moving from main to ipc
+dd00d994ce4c53829d0b871622dc05e90a6f58c3 8650f4b2e7a4ecc159fae6200d74e2a25fa3cccf Celdir <michael.earl7769@gmail.com> 1712120635 -0700	commit: apply ipc patch
+8650f4b2e7a4ecc159fae6200d74e2a25fa3cccf dd00d994ce4c53829d0b871622dc05e90a6f58c3 Celdir <michael.earl7769@gmail.com> 1712120656 -0700	checkout: moving from ipc to main
+dd00d994ce4c53829d0b871622dc05e90a6f58c3 dd00d994ce4c53829d0b871622dc05e90a6f58c3 Celdir <michael.earl7769@gmail.com> 1712120662 -0700	checkout: moving from main to gaps
+dd00d994ce4c53829d0b871622dc05e90a6f58c3 9d4bddc13ec605ed0d83afdc9d7dfbd5e28a5a0d Celdir <michael.earl7769@gmail.com> 1712120680 -0700	commit: apply gaps patch
+9d4bddc13ec605ed0d83afdc9d7dfbd5e28a5a0d 8650f4b2e7a4ecc159fae6200d74e2a25fa3cccf Celdir <michael.earl7769@gmail.com> 1712120742 -0700	rebase (start): checkout ipc
+8650f4b2e7a4ecc159fae6200d74e2a25fa3cccf 3318816d159bfee13f1fd88242718fbdb077e5c0 Celdir <michael.earl7769@gmail.com> 1712120742 -0700	rebase (pick): apply gaps patch
+3318816d159bfee13f1fd88242718fbdb077e5c0 3318816d159bfee13f1fd88242718fbdb077e5c0 Celdir <michael.earl7769@gmail.com> 1712120742 -0700	rebase (finish): returning to refs/heads/gaps
+3318816d159bfee13f1fd88242718fbdb077e5c0 dd00d994ce4c53829d0b871622dc05e90a6f58c3 Celdir <michael.earl7769@gmail.com> 1712120896 -0700	checkout: moving from gaps to main
+dd00d994ce4c53829d0b871622dc05e90a6f58c3 3318816d159bfee13f1fd88242718fbdb077e5c0 Celdir <michael.earl7769@gmail.com> 1712120900 -0700	rebase (start): checkout gaps
+3318816d159bfee13f1fd88242718fbdb077e5c0 3318816d159bfee13f1fd88242718fbdb077e5c0 Celdir <michael.earl7769@gmail.com> 1712120900 -0700	rebase (finish): returning to refs/heads/main
+3318816d159bfee13f1fd88242718fbdb077e5c0 3318816d159bfee13f1fd88242718fbdb077e5c0 Celdir <michael.earl7769@gmail.com> 1712347291 -0700	checkout: moving from main to gaps
+3318816d159bfee13f1fd88242718fbdb077e5c0 dd00d994ce4c53829d0b871622dc05e90a6f58c3 Celdir <michael.earl7769@gmail.com> 1712347412 -0700	rebase (start): checkout dd00d994ce4c53829d0b871622dc05e90a6f58c3
+dd00d994ce4c53829d0b871622dc05e90a6f58c3 dd00d994ce4c53829d0b871622dc05e90a6f58c3 Celdir <michael.earl7769@gmail.com> 1712347412 -0700	rebase (finish): returning to refs/heads/gaps
+dd00d994ce4c53829d0b871622dc05e90a6f58c3 dd00d994ce4c53829d0b871622dc05e90a6f58c3 Celdir <michael.earl7769@gmail.com> 1712347431 -0700	reset: moving to HEAD
+dd00d994ce4c53829d0b871622dc05e90a6f58c3 3318816d159bfee13f1fd88242718fbdb077e5c0 Celdir <michael.earl7769@gmail.com> 1712347453 -0700	checkout: moving from gaps to main
+3318816d159bfee13f1fd88242718fbdb077e5c0 dd00d994ce4c53829d0b871622dc05e90a6f58c3 Celdir <michael.earl7769@gmail.com> 1712347464 -0700	reset: moving to HEAD^^
+dd00d994ce4c53829d0b871622dc05e90a6f58c3 577d8da6d17dad5f847795582ebf813f3c5c04a7 Celdir <michael.earl7769@gmail.com> 1712362464 -0700	pull: Fast-forward
+577d8da6d17dad5f847795582ebf813f3c5c04a7 7fdc81dbd4b47ca8f4b3e6f3d0d74b6996ae7f7b Celdir <michael.earl7769@gmail.com> 1712362934 -0700	commit: apply gaps
+7fdc81dbd4b47ca8f4b3e6f3d0d74b6996ae7f7b 7fdc81dbd4b47ca8f4b3e6f3d0d74b6996ae7f7b Celdir <michael.earl7769@gmail.com> 1712362985 -0700	checkout: moving from main to applybar
+7fdc81dbd4b47ca8f4b3e6f3d0d74b6996ae7f7b 7fdc81dbd4b47ca8f4b3e6f3d0d74b6996ae7f7b Celdir <michael.earl7769@gmail.com> 1712363125 -0700	rebase (start): checkout 2b171fd5010379a8674afa012245fea5a590e472
+7fdc81dbd4b47ca8f4b3e6f3d0d74b6996ae7f7b 7fdc81dbd4b47ca8f4b3e6f3d0d74b6996ae7f7b Celdir <michael.earl7769@gmail.com> 1712363125 -0700	rebase (finish): returning to refs/heads/applybar
+7fdc81dbd4b47ca8f4b3e6f3d0d74b6996ae7f7b 2b171fd5010379a8674afa012245fea5a590e472 Celdir <michael.earl7769@gmail.com> 1712363179 -0700	rebase (start): checkout 2b171fd5010379a8674afa012245fea5a590e472
+2b171fd5010379a8674afa012245fea5a590e472 2b171fd5010379a8674afa012245fea5a590e472 Celdir <michael.earl7769@gmail.com> 1712363179 -0700	rebase (finish): returning to refs/heads/applybar
+2b171fd5010379a8674afa012245fea5a590e472 d2891167265eeb8d32536bf63e06fe5cdf84198f Celdir <michael.earl7769@gmail.com> 1712363272 -0700	commit: apply bar patch
+d2891167265eeb8d32536bf63e06fe5cdf84198f 7fdc81dbd4b47ca8f4b3e6f3d0d74b6996ae7f7b Celdir <michael.earl7769@gmail.com> 1712363283 -0700	checkout: moving from applybar to main
+7fdc81dbd4b47ca8f4b3e6f3d0d74b6996ae7f7b d2891167265eeb8d32536bf63e06fe5cdf84198f Celdir <michael.earl7769@gmail.com> 1712363290 -0700	rebase (start): checkout applybar
+d2891167265eeb8d32536bf63e06fe5cdf84198f 6a3ab6ddedc7c234d809e6e72bc99a010f1411e2 Celdir <michael.earl7769@gmail.com> 1712363290 -0700	rebase (pick): Fix rule examples; minimize newbie surprises
+6a3ab6ddedc7c234d809e6e72bc99a010f1411e2 979e1cbd9a6872636bc5fbbccdaf66d8d4631431 Celdir <michael.earl7769@gmail.com> 1712363290 -0700	rebase (pick): properly resize on configurex11
+979e1cbd9a6872636bc5fbbccdaf66d8d4631431 61693a5b081b164c91f0796c0120f74fcffb9d49 Celdir <michael.earl7769@gmail.com> 1712363290 -0700	rebase (pick): do not set withdrawn state for xwayland clients
+61693a5b081b164c91f0796c0120f74fcffb9d49 5eef656227a0849496ae2587cb0ec261f8ccb1c5 Celdir <michael.earl7769@gmail.com> 1712363340 -0700	rebase (pick): apply gaps
+5eef656227a0849496ae2587cb0ec261f8ccb1c5 5eef656227a0849496ae2587cb0ec261f8ccb1c5 Celdir <michael.earl7769@gmail.com> 1712363340 -0700	rebase (finish): returning to refs/heads/main
+5eef656227a0849496ae2587cb0ec261f8ccb1c5 502e861388ccd54030985b505c11d5d09fd9b585 Celdir <michael.earl7769@gmail.com> 1712464269 -0700	commit: include utf8 from bar patch
+502e861388ccd54030985b505c11d5d09fd9b585 0eeec97d5f48739f3222d1057d66fc506dae4d5f Celdir <michael.earl7769@gmail.com> 1712464283 -0700	commit: enable xwayland
+0eeec97d5f48739f3222d1057d66fc506dae4d5f 7a6c318516336d03abf052306993aa5c03c0033e Celdir <michael.earl7769@gmail.com> 1712464593 -0700	commit: statusblocks
+7a6c318516336d03abf052306993aa5c03c0033e 3687f9bc52791787fdade9a33e7aa93db0d60d44 Celdir <michael.earl7769@gmail.com> 1712464603 -0700	commit (amend): statusblocks
+3687f9bc52791787fdade9a33e7aa93db0d60d44 16fe87ca81cefd9c57bca13f1fb1d28e19a3bc3d Celdir <michael.earl7769@gmail.com> 1712464627 -0700	commit: commit personal config.h
+16fe87ca81cefd9c57bca13f1fb1d28e19a3bc3d 7c7127f98672012f5082ec47728b16ce3b2d3968 Celdir <michael.earl7769@gmail.com> 1712552980 -0700	commit: keybinds

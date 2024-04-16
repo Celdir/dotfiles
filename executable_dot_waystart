@@ -1,0 +1,2 @@
+#!/bin/sh
+conky -c ~/.dwl_conkyrc | dwl -s ~/.wayinit

@@ -1,0 +1,3 @@
+#!/bin/sh
+swaybg -m stretch -o DP-1 -i ~/Pictures/secretflowers.png -o DP-2 -i ~/Pictures/lonelyisland.png &
+pulseaudio --start &

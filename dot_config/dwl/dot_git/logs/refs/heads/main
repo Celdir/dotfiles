@@ -1,0 +1,14 @@
+0000000000000000000000000000000000000000 dd00d994ce4c53829d0b871622dc05e90a6f58c3 Celdir <michael.earl7769@gmail.com> 1712119118 -0700	clone: from https://codeberg.org/dwl/dwl.git
+dd00d994ce4c53829d0b871622dc05e90a6f58c3 49f3255052f9e20150260fbbc57def2be83a034b Celdir <michael.earl7769@gmail.com> 1712120369 -0700	am: introduce gaps with functionality of useless gaps from dwm
+49f3255052f9e20150260fbbc57def2be83a034b dd00d994ce4c53829d0b871622dc05e90a6f58c3 Celdir <michael.earl7769@gmail.com> 1712120376 -0700	am --abort
+dd00d994ce4c53829d0b871622dc05e90a6f58c3 3318816d159bfee13f1fd88242718fbdb077e5c0 Celdir <michael.earl7769@gmail.com> 1712120900 -0700	rebase (finish): refs/heads/main onto 3318816d159bfee13f1fd88242718fbdb077e5c0
+3318816d159bfee13f1fd88242718fbdb077e5c0 dd00d994ce4c53829d0b871622dc05e90a6f58c3 Celdir <michael.earl7769@gmail.com> 1712347464 -0700	reset: moving to HEAD^^
+dd00d994ce4c53829d0b871622dc05e90a6f58c3 577d8da6d17dad5f847795582ebf813f3c5c04a7 Celdir <michael.earl7769@gmail.com> 1712362464 -0700	pull: Fast-forward
+577d8da6d17dad5f847795582ebf813f3c5c04a7 7fdc81dbd4b47ca8f4b3e6f3d0d74b6996ae7f7b Celdir <michael.earl7769@gmail.com> 1712362934 -0700	commit: apply gaps
+7fdc81dbd4b47ca8f4b3e6f3d0d74b6996ae7f7b 5eef656227a0849496ae2587cb0ec261f8ccb1c5 Celdir <michael.earl7769@gmail.com> 1712363340 -0700	rebase (finish): refs/heads/main onto d2891167265eeb8d32536bf63e06fe5cdf84198f
+5eef656227a0849496ae2587cb0ec261f8ccb1c5 502e861388ccd54030985b505c11d5d09fd9b585 Celdir <michael.earl7769@gmail.com> 1712464269 -0700	commit: include utf8 from bar patch
+502e861388ccd54030985b505c11d5d09fd9b585 0eeec97d5f48739f3222d1057d66fc506dae4d5f Celdir <michael.earl7769@gmail.com> 1712464283 -0700	commit: enable xwayland
+0eeec97d5f48739f3222d1057d66fc506dae4d5f 7a6c318516336d03abf052306993aa5c03c0033e Celdir <michael.earl7769@gmail.com> 1712464593 -0700	commit: statusblocks
+7a6c318516336d03abf052306993aa5c03c0033e 3687f9bc52791787fdade9a33e7aa93db0d60d44 Celdir <michael.earl7769@gmail.com> 1712464603 -0700	commit (amend): statusblocks
+3687f9bc52791787fdade9a33e7aa93db0d60d44 16fe87ca81cefd9c57bca13f1fb1d28e19a3bc3d Celdir <michael.earl7769@gmail.com> 1712464627 -0700	commit: commit personal config.h
+16fe87ca81cefd9c57bca13f1fb1d28e19a3bc3d 7c7127f98672012f5082ec47728b16ce3b2d3968 Celdir <michael.earl7769@gmail.com> 1712552980 -0700	commit: keybinds

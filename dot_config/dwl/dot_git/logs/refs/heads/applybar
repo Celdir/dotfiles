@@ -1,0 +1,3 @@
+0000000000000000000000000000000000000000 7fdc81dbd4b47ca8f4b3e6f3d0d74b6996ae7f7b Celdir <michael.earl7769@gmail.com> 1712362985 -0700	branch: Created from HEAD
+7fdc81dbd4b47ca8f4b3e6f3d0d74b6996ae7f7b 2b171fd5010379a8674afa012245fea5a590e472 Celdir <michael.earl7769@gmail.com> 1712363179 -0700	rebase (finish): refs/heads/applybar onto 2b171fd5010379a8674afa012245fea5a590e472
+2b171fd5010379a8674afa012245fea5a590e472 d2891167265eeb8d32536bf63e06fe5cdf84198f Celdir <michael.earl7769@gmail.com> 1712363272 -0700	commit: apply bar patch

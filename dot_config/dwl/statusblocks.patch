@@ -1,0 +1,92 @@
+diff --git a/config.def.h b/config.def.h
+index 6690e0b..1695d3d 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -27,6 +27,12 @@ static pixman_color_t normbarbg = { 0x2222, 0x2222, 0x2222, 0xffff };
+ static pixman_color_t selbarfg  = { 0xeeee, 0xeeee, 0xeeee, 0xffff };
+ static pixman_color_t selbarbg  = { 0x0000, 0x5555, 0x7777, 0xffff };
+ 
++/* status blocks */
++static const int statusblocks       = 0; /* 1 means render background colors for status blocks (text surrounded by []) */
++static pixman_color_t blockcolors[] = {  /* list of status block background colors to cycle through */
++    { 0x2222, 0x2222, 0x2222, 0xffff },
++};
++
+ /* tagging - TAGCOUNT must be no greater than 31 */
+ static char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+ 
+diff --git a/dwl.c b/dwl.c
+index 09ee8bb..a8fa19d 100644
+--- a/dwl.c
++++ b/dwl.c
+@@ -438,6 +438,7 @@ static struct fcft_font *font;
+ static int bh;
+ static int lrpad;
+ static char stext[256];
++static char sblock[256];
+ static struct wl_event_source *status_event_source;
+ 
+ static const struct wlr_buffer_impl buffer_impl = {
+@@ -1436,9 +1437,10 @@ drawbar(Monitor *mon)
+ 	int sel;
+ 	int boxs = font->height / 9;
+ 	int boxw = font->height / 6 + 2;
++	int braces = 0, coloridx = 0, blockoffset = 0, blockw = 0;
+ 	uint32_t i, occ = 0, urg = 0;
+ 	uint32_t stride, size;
+-	const char *title;
++	const char *title, *ptr, *blockbegin, *blockend;
+ 	pixman_image_t *pix;
+ 	Client *c;
+ 	Buffer *buf;
+@@ -1449,9 +1451,9 @@ drawbar(Monitor *mon)
+ 	stride = mon->b.width * 4;
+ 	size = stride * mon->b.height;
+ 
+-    buf = ecalloc(1, sizeof(Buffer) + size);
++	buf = ecalloc(1, sizeof(Buffer) + size);
+ 	buf->stride = stride;
+-    wlr_buffer_init(&buf->base, &buffer_impl, mon->b.width, mon->b.height);
++	wlr_buffer_init(&buf->base, &buffer_impl, mon->b.width, mon->b.height);
+ 
+ 	pix = pixman_image_create_bits(
+ 		PIXMAN_a8r8g8b8, mon->b.width, mon->b.height, buf->data, stride);
+@@ -1461,8 +1463,36 @@ drawbar(Monitor *mon)
+ 		if (stext[0] == '\0')
+ 			strncpy(stext, "dwl-"VERSION, sizeof(stext));
+ 		draw_rect(pix, 0, 0, mon->b.width, mon->b.height, 1, &normbarbg);
+-		tw = TEXTW(stext) - lrpad + 2;
+-		draw_text(pix, mon->b.width - tw, 0, tw, mon->b.height, 0, stext, &normbarfg);
++
++		if (statusblocks) {
++			// status block bar with colors
++			ptr = stext;
++			for (; ptr < END(stext); ptr++) {
++				ptr = strpbrk(ptr, "[]");
++				if (ptr == NULL) break;
++				braces++;
++			}
++			tw = (TEXTW(stext) - lrpad) - braces * (TEXTW("[") - lrpad) + (braces / 2) * lrpad;
++
++			ptr = stext;
++			while (ptr < END(stext) && (blockbegin = strstr(ptr, "[")) != NULL) {
++				blockend = strstr(ptr, "]");
++				if (blockend == NULL) {
++					break;
++				}
++				memset(sblock, 0, LENGTH(sblock));
++				strncpy(sblock, blockbegin+1, (blockend - blockbegin - 1));
++				ptr = blockend+1;
++				blockw = TEXTW(sblock);
++				draw_rect(pix, mon->b.width - tw + blockoffset, 0, blockw, mon->b.height, 1, &blockcolors[coloridx]);
++				draw_text(pix, mon->b.width - tw + blockoffset, 0, blockw, mon->b.height, lrpad/2, sblock, &normbarfg);
++				blockoffset += blockw;
++				coloridx = (coloridx + 1) % LENGTH(blockcolors);
++			}
++		} else {
++			tw = TEXTW(stext) - lrpad + 2;
++			draw_text(pix, mon->b.width - tw, 0, tw, mon->b.height, 0, stext, &normbarfg);
++		}
+ 	}
+ 
+ 	wl_list_for_each(c, &clients, link) {
