@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup {
-    ensure_installed = { "rust_analyzer", "clangd", "elixirls", "pyright", "gopls" },
+    ensure_installed = { "rust_analyzer", "clangd", "elixirls", "gopls" },
 }
 
 local lsp_zero = require('lsp-zero')
@@ -13,8 +13,17 @@ end)
 require("lspconfig").rust_analyzer.setup {}
 require("lspconfig").clangd.setup {}
 require("lspconfig").elixirls.setup {}
-require("lspconfig").pyright.setup {}
-require("lspconfig").gopls.setup {}
+require("lspconfig").gopls.setup {
+	on_attach = function(client)
+		vim.cmd [[set noexpandtab]]
+        lsp_zero.buffer_autoformat()
+	end,
+	settings = {
+		gopls = {
+			gofumpt = true
+		}
+	}
+}
 
 local cmp = require('cmp')
 
@@ -43,3 +52,5 @@ require("autoclose").setup({
         disable_command_mode = true
     }
 })
+
+vim.cmd [[colorscheme apprentice]]

@@ -27,6 +27,7 @@ endif
 if !isdirectory($HOME."/.config/nvim/undo")
     call mkdir($HOME."/.config/nvim/undo", "", 0700)
 endif
+set noswapfile
 set undofile
 set undodir=~/.config/nvim/undo
 
@@ -111,12 +112,19 @@ set smarttab
 set history=100
 set undolevels=100
 set t_Co=256
-"colorscheme bubblegum
-"colorscheme xoria256
-"colorscheme gotham256
-colorscheme apprentice
+
+" trigger `autoread` when files changes on disk
+set autoread
+autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
+" notification after file change
+autocmd FileChangedShellPost *
+\ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
+
 
 call plug#begin()
+
+Plug 'rktjmp/lush.nvim'
+Plug 'adisen99/apprentice.nvim'
 
 Plug 'rust-lang/rust.vim'
 nnoremap <leader>p :RustFmt<CR>
