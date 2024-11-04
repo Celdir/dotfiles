@@ -120,7 +120,6 @@ autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checkti
 autocmd FileChangedShellPost *
 \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
 
-
 call plug#begin()
 
 Plug 'rktjmp/lush.nvim'
@@ -138,6 +137,8 @@ au BufRead,BufNewFile mix.lock set filetype=elixir
 Plug 'ap/vim-buftabline'
 let g:buftabline_show=1
 
+command! -bang -nargs=* Rg
+    \ call fzf#vim#grep("rg --hidden --glob '!.git' --column --line-number --no-heading --color=always --smart-case -- ".fzf#shellescape(<q-args>), fzf#vim#with_preview(), <bang>0)
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 nnoremap <leader>f :Files<CR>
@@ -146,6 +147,8 @@ nnoremap <leader><S-f> :Rg<CR>
 Plug 'machakann/vim-sandwich'
 
 Plug 'm4xshen/autoclose.nvim'
+
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " 
 " nnoremap <silent> <buffer> <F9> :call <SID>compile_run_cpp()<CR>
