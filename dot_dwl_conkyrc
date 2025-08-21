@@ -13,6 +13,6 @@ conky.text =
 [[ ]] .. [[ ${cpu}%]] ..                                                                         "][" ..
 [[󰋊]] ..  [[ /home ${fs_used /home}/${fs_size /home}]] ..                                         "][" ..
 [[ ]] .. [[ $mem]] ..                                                                            "][" ..
-[[󰖐 ]] .. [[ ${execi 300 sh ~/scripts/weather.sh 98103}]] ..                                      "][" ..
+[[󰖐 ]] .. [[ ${execi 300 sh ~/.config/scripts/weather.sh 98103}]] ..                              "][" ..
 [[󰕾]] ..  [[ ${exec amixer -D pulse | grep -E -o '[0-9]+%' | head -1 | grep -E -o '[0-9]*'}%]] .. "][" ..
 [[ ]] .. [[ ${time %A %d %B %H:%M:%S}]] ..                                                       "]";
