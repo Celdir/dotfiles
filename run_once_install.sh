@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install packages
-sudo pacman -S --no-confirm --needed neovim make gcc feh xbindkeys dzen2 conky ttf-liberation-mono-nerd libinput wayland wlroots libxkbcommon wayland-protocols pkg-config xorg-xwayland libxcb libxcb-wm pixman fcft tllist
+sudo pacman -S --no-confirm --needed neovim make gcc feh xbindkeys dzen2 conky ttf-liberation-mono-nerd libinput wayland wlroots libxkbcommon wayland-protocols pkg-config xorg-xwayland libxcb libxcb-wm pixman fcft tllist ttf-liberation-mono-nerd
 
 # neovim setup
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
